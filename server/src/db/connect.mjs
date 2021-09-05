@@ -1,3 +1,3 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost:27017/fakestore', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://annafridman:12345@cluster0.ftks6.mongodb.net/fakestore', {useNewUrlParser: true, useUnifiedTopology: true});
