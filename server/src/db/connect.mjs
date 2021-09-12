@@ -1,3 +1,5 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb+srv://annafridman:12345@cluster0.ftks6.mongodb.net/fakestore', {useNewUrlParser: true, useUnifiedTopology: true});
+const dbURL = process.env.DB_URL || 'mongodb://localhost:27017/fakestore' 
+
+mongoose.connect(dbURL, {useNewUrlParser: true, useUnifiedTopology: true});
